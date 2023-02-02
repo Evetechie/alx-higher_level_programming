@@ -9,12 +9,13 @@ def safe_print_list(my_list=[], x=0):
     Returns:
         The real number of elements printed.
     """
-    sum = 0
-    for i in range(x):
+    count = 0
+    for num in range(x):
         try:
-            print(f"{my_list[i]}", end="")
-            sum += 1
+            print("{}".format(my_list[num]), end="")
         except IndexError:
             break
-    print("")
-    return (sum)
+        else:
+            count += 1
+    print()
+    return (count)count = 0

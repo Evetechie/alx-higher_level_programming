@@ -4,8 +4,10 @@
 
 class Rectangle:
     """Represent a rectangle."""
+
     def __init__(self, width=0, height=0):
         """Initialize a new Rectangle.
+
         Args:
             width (int): The width of the Rectangle.
             height (int): The height of the new Rectangle.
@@ -51,6 +53,7 @@ class Rectangle:
 
         def __str__(self):
             """Return the printable representation of the rectangle.
+
             Represents the rectangle with the # character.
             """
             if self.__width == 0 or self.__width == 0:
@@ -60,6 +63,5 @@ class Rectangle:
             for i in range(self.__height):
                 [rect.append('#') for j in range(self.__width)]
                 if i != self.__height - 1:
-
                     rect.append("\n")
-                    return ("".join(rect))
+            return ("".join(rect))

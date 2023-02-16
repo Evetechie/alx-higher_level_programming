@@ -1,5 +1,8 @@
 #!/usr/bin/python3
-"""Defines a Rectangle class."""
+"""
+Defines a Rectangle class with private attribute width and height
+and a public area and perimeter methods.
+"""
 
 
 class Rectangle:
@@ -23,9 +26,9 @@ class Rectangle:
     def width(self, value):
         """Sets the width attribute of the Rectangle."""
         if not isinstance(value, int):
-            raise TypeError("width has to be an integer")
+            raise TypeError("width must be an integer")
         if value < 0:
-            raise ValueError("width has to be >= 0")
+            raise ValueError("width must be >= 0")
         self.__width = value
 
     @property
@@ -37,9 +40,9 @@ class Rectangle:
     def height(self, value):
         """Sets the height attribute of the Rectangle."""
         if not isinstance(value, int):
-            raise TypeError("height has to be an integer")
+            raise TypeError("height must be an integer")
         if value < 0:
-            raise ValueError("height has to be >= 0")
+            raise ValueError("height must be >= 0")
         self.__height = value
 
         def area(self):
